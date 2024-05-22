@@ -96,6 +96,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    LisaaParts
+
 # Camera
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -150,10 +154,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
-
-# Gamebar
-PRODUCT_PACKAGES += \
-    GameBar
 
 # GNSS
 PRODUCT_COPY_FILES += \
@@ -252,10 +252,6 @@ PRODUCT_PACKAGES += \
     ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget
-
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
