@@ -253,6 +253,10 @@ PRODUCT_PACKAGES += \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
