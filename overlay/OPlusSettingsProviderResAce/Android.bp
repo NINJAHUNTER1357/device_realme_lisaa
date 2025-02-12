@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "OPlusSettingsProviderResNord3",
+    name: "OPlusSettingsProviderResAce",
     device_specific: true,
 }
