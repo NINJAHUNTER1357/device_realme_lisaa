@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the custom device configuration.
 $(call inherit-product, device/realme/lisaa/device.mk)
 
-# Inherit from the YAAP configuration.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit from the LineageOS configuration.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := lisaa
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_MODEL := RMX3562
-PRODUCT_NAME := yaap_lisaa
+PRODUCT_NAME := lineage_lisaa
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
