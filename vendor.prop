@@ -147,6 +147,9 @@ graphics.gpu.profiler.support=true
 ro.hardware.egl=meow
 ro.hardware.vulkan=mali
 
+# GPU
+persist.sys.phh.mtk_ged_kpi=1
+
 # Incremental FS
 ro.incremental.enable=yes
 
