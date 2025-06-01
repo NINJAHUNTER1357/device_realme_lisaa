@@ -149,6 +149,7 @@ ro.hardware.vulkan=mali
 
 # GPU
 persist.sys.phh.mtk_ged_kpi=1
+debug.hwui.overlays.disabled=true
 
 # Incremental FS
 ro.incremental.enable=yes
