@@ -1,0 +1,3 @@
+# Core Control
+type vendor_sysfs_corecontrol, fs_type, sysfs_type;
+

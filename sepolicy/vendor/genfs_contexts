@@ -1,0 +1,3 @@
+# Core Control
+genfscon sysfs /devices/system/cpu/cpu[0-7]/online   u:object_r:vendor_sysfs_corecontrol:s0
+

@@ -1,0 +1,4 @@
+# Core Control
+allow system_app vendor_sysfs_corecontrol:dir search;
+allow system_app vendor_sysfs_corecontrol:file { getattr open read write };
+
