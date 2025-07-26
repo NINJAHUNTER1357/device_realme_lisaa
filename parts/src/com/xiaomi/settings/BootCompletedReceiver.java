@@ -27,10 +27,5 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
 
-        // Override HDR types to enable Dolby Vision
-        final IBinder displayToken = SurfaceControl.getInternalDisplayToken();
-        SurfaceControl.overrideHdrTypes(displayToken,
-                new int[] {HdrCapabilities.HDR_TYPE_DOLBY_VISION, HdrCapabilities.HDR_TYPE_HDR10,
-                        HdrCapabilities.HDR_TYPE_HLG, HdrCapabilities.HDR_TYPE_HDR10_PLUS});
     }
 }
