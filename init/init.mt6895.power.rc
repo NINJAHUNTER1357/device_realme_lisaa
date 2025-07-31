@@ -30,8 +30,6 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy0/schedutil/rate_limit_us 5000 
     write /sys/devices/system/cpu/cpufreq/policy4/schedutil/rate_limit_us 2000
 
-    # ZRAM setup
-    write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
 
     # memory reserve tuning
@@ -47,11 +45,6 @@ on post-fs-data
     write /sys/block/mmcblk0/queue/nr_requests 256
     write /sys/block/sdc/queue/iostats 0
     write /sys/block/sdc/queue/nr_requests 256
-
-    # Set permissions for ZRAM sysfs nodes
-    chmod 0644 /sys/block/zram0/comp_algorithm
-    chmod 0644 /sys/block/zram0/disksize
-    write /sys/block/zram0/disksize 6442450944
 
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
@@ -74,7 +67,6 @@ on boot
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.enableswap
     write /proc/sys/vm/swappiness 100
 
     # Adjust watermark level
