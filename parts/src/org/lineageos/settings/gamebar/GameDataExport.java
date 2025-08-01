@@ -49,8 +49,6 @@ public class GameDataExport {
             "Battery_Temp",
             "CPU_Usage",
             "CPU_Temp",
-            "GPU_Usage",
-            "GPU_Clock",
             "GPU_Temp"
     };
 
@@ -77,8 +75,6 @@ public class GameDataExport {
                                String batteryTemp,
                                String cpuUsage,
                                String cpuTemp,
-                               String gpuUsage,
-                               String gpuClock,
                                String gpuTemp) {
         if (!mCapturing) return;
 
@@ -88,9 +84,7 @@ public class GameDataExport {
                 fps,
                 batteryTemp,
                 cpuUsage,
-                cpuTemp,
-                gpuUsage,
-                gpuClock,
+                cpuTemp,  
                 gpuTemp
         };
         mStatsRows.add(row);
